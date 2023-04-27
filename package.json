@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fjlaubscher/matter": "fjlaubscher/matter",
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
+    "react-markdown": "^8.0.7",
+    "react-router-dom": "^6.10.0",
+    "recoil": "^0.7.7",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  }
+}
