@@ -6,6 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
+    "postbuild": "react-snap",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "preview": "vite preview"
   },
@@ -27,10 +28,18 @@
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.38.0",
     "prettier": "^2.8.8",
+    "react-snap": "^1.23.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   },
+  "resolutions": {
+    "puppeteer": "^13"
+  },
   "reactSnap": {
-    "source": "dist"
+    "source": "./dist",
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   }
 }

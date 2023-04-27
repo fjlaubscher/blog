@@ -17,12 +17,11 @@ jobs:
       - run: npm install -g yarn
       - run: yarn install
       - run: yarn build
-      - run: npx react-snap -y
       - name: rsync-deploy
         uses: Pendect/action-rsyncer@v2.0.0
         env:
           DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
         with:
           flags: '-arv --delete'
-          src: 'build/'
+          src: 'dist/'
           dest: 'root@"${{secrets.SERVER_IP}}":/var/www/blog'
