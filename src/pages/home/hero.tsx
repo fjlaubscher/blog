@@ -6,7 +6,7 @@ import LightAvatarUrl from './me-light.svg';
 import DarkAvatarUrl from './me-dark.svg';
 
 // components
-import { Paragraphs } from './about.tsx';
+import { Paragraphs } from './about';
 
 import styles from './home.module.scss';
 

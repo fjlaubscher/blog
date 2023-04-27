@@ -10,7 +10,7 @@ import Markdown from '../../components/markdown';
 import data from '../../data.json';
 
 // hooks
-import useAsync from '../../hooks/use-async.ts';
+import useAsync from '../../hooks/use-async';
 
 const PostPage = () => {
   const { category, slug } = useParams();
