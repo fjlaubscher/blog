@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Container, Grid } from '@fjlaubscher/matter';
 import classnames from 'classnames';
 
@@ -25,19 +26,27 @@ const META_DESCRIPTION = `
     I think I'm getting old.
 `;
 
-const Home = () => (
-  <Layout title="Blog" description={META_DESCRIPTION}>
-    <Hero />
-    <About />
-    <Container className={classnames(styles.container, styles.featured)}>
-      <h2>Latest</h2>
-      <Grid>
-        {(data as Blog.Post[]).map((post, i) => (
-          <Post key={`post-${i}`} {...post} />
-        ))}
-      </Grid>
-    </Container>
-  </Layout>
-);
+const Home = () => {
+  const latestPosts: Blog.Post[] = useMemo(() => {
+    const posts = data as Blog.Post[];
+
+    return posts.slice(0, 3);
+  }, [data]);
+
+  return (
+    <Layout title="Blog" description={META_DESCRIPTION}>
+      <Hero />
+      <About />
+      <Container className={classnames(styles.container, styles.featured)}>
+        <h2>Latest</h2>
+        <Grid>
+          {latestPosts.map((post, i) => (
+            <Post key={`post-${i}`} {...post} />
+          ))}
+        </Grid>
+      </Container>
+    </Layout>
+  );
+};
 
 export default Home;

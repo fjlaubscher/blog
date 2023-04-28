@@ -50,26 +50,28 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
           </Stack>
         </Container>
       </nav>
-      {variant === 'with-hero' && (
+      {variant === 'with-hero' && image ? (
         <section
-          className={styles.hero}
-          style={
-            image
-              ? {
-                  backgroundImage: `url(${image.large})`,
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover'
-                }
-              : undefined
-          }
+          className={styles.heroWithImage}
+          style={{
+            backgroundImage: `url(${image.large})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
         >
           <div className={styles.heroText}>
             <h1>{title}</h1>
             <h2>{description}</h2>
           </div>
         </section>
-      )}
+      ) : undefined}
+      {variant === 'with-hero' && !image ? (
+        <section className={styles.hero}>
+          <h1>{title}</h1>
+          <h2>{description}</h2>
+        </section>
+      ) : undefined}
       <main className={styles.content}>{children}</main>
       <img className={styles.wave} src="/wave.svg" alt="wave" />
       <footer className={styles.footer}>

@@ -19,10 +19,6 @@
     text-decoration: underline;
   }
 
-  img {
-    max-height: 640px;
-  }
-
   blockquote {
     margin: 0;
     border-left: 2px solid var(--color-light-surface);
@@ -35,15 +31,14 @@
     }
   }
 
-  p {
-    line-height: 1.5;
+  p, li {
+    line-height: 1.6;
   }
 
   code {
-    padding: 0.25rem 0.5rem;
+    padding: 2px 8px;
     border-radius: 0.5rem;
     background-color: var(--color-light-surface);
-    line-height: 1.5;
 
     @media(prefers-color-scheme: dark) {
       background-color: var(--color-dark-surface);
@@ -55,11 +50,9 @@
     padding-left: 2rem;
   }
 
-  li {
-    line-height: 1;
-  }
-
   img {
+    display: block;
+    max-height: 640px;
     max-width: 100%;
     margin: 0 auto;
   }

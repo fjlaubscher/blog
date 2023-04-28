@@ -26,9 +26,9 @@ Then, prime the miniatures with a spray or brush-on primer to create a smooth su
 
 ## Priming
 
-I usually prime my miniatures with my airbrush, but these were primed using **Rust-Oleum Painter's Touch Flat Grey Primer**.
+I usually prime my miniatures with my airbrush, but these were primed using `Rust-Oleum Painter's Touch Flat Grey Primer`.
 
-## Base coating
+## Base Coating
 
 I usually start by applying `Vallejo - German Camo Medium Brown` to the pants and canteen.
 While I wait for it to dry, I start applying `Vallejo - Khaki` to the shirt, gaiters, backpack and any ammo pouches on the miniature.

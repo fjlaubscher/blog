@@ -23,12 +23,10 @@ const PostPage = () => {
     status,
     value: markdown
   } = useAsync<string | undefined>(async () => {
-    if (navigator.userAgent !== 'ReactSnap') {
-      const response = await fetch(`/posts/${category}/${slug}.md`);
-      if (response.ok) {
-        const blob = await response.blob();
-        return await blob.text();
-      }
+    const response = await fetch(`/posts/${category}/${slug}.md`);
+    if (response.ok) {
+      const blob = await response.blob();
+      return await blob.text();
     }
 
     return undefined;
