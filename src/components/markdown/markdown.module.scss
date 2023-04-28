@@ -1,3 +1,5 @@
+@use "@fjlaubscher/matter/src/styles/breakpoints";
+
 .markdown {
   width: 100%;
 
@@ -21,13 +23,13 @@
 
   blockquote {
     margin: 0;
-    border-left: 2px solid var(--color-light-surface);
+    border-left: 2px solid var(--color-light-border);
     padding-left: 1rem;
     font-size: 0.9rem;
 
     @media(prefers-color-scheme: dark) {
       color: #bbb;
-      border-left-color: var(--color-dark-surface);
+      border-left-color: var(--color-dark-border);
     }
   }
 
@@ -55,5 +57,9 @@
     max-height: 640px;
     max-width: 100%;
     margin: 0 auto;
+
+    @media (min-width: breakpoints.$tablet) {
+      margin: 0;
+    }
   }
 }

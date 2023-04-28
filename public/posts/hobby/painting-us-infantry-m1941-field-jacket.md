@@ -47,11 +47,11 @@ I'd suggest waiting a few minutes (~10 minutes) for your base coats to dry befor
 First, I start by applying `Citadel - Nuln Oil` to the rifle and helmet, covering the parts entirely.
 For the uniform, boots, backpack and pouches I shade them by applying `Citadel - Agrax Earthshade`.
 
-Finally (and carefully), I apply `Citadel - Reikland Fleshshade` to all the skin on the miniature.
+Finally (and carefully), I apply `Citadel - Reikland Fleshshade` to the skin of the miniature.
 
 ## Layering
 
-Many stop after applying washes, but I like to go a bit further to add a few more details to the miniature to make it "pop".
+Many stop after applying washes, but I like to go a bit further by adding some additional layers to the miniature to make it "pop".
 The shades applied in the previous step need to dry for a few minutes (~10 minutes) before applying the layers in this step.
 
 Start by applying `Vallejo - German Camo Medium Brown` to the raised areas of the pants, avoiding the recesses which have been shaded in the previous step.
