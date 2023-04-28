@@ -24,7 +24,10 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
         <meta name="description" content={description} />
         <meta name="og:title" content={`${title} | Francois Laubscher`} />
         <meta name="og:description" content={description} />
-        <meta name="og:image" content={image?.small || 'https://francoislaubscher.dev/me.png'} />
+        <meta
+          name="og:image"
+          content={image?.social || 'https://blog.francoislaubscher.dev/me.png'}
+        />
       </Helmet>
       <nav className={styles.nav}>
         <Container className={styles.navContent}>
