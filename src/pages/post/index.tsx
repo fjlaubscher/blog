@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from 'react';
-import { useParams } from 'react-router-dom';
-import { Alert, Container, Loader } from '@fjlaubscher/matter';
+import { Link, useParams } from 'react-router-dom';
+import { Alert, Container, Loader, Stack, Tag } from '@fjlaubscher/matter';
+import { parseISO, format } from 'date-fns';
 
 // components
 import Layout from '../../components/layout';
@@ -11,6 +12,8 @@ import data from '../../data.json';
 
 // hooks
 import useAsync from '../../hooks/use-async';
+
+import styles from './post.module.scss';
 
 const PostPage = () => {
   const { category, slug } = useParams();
@@ -56,6 +59,12 @@ const PostPage = () => {
       {status === 'pending' && <Loader />}
       {status === 'success' && (
         <Container>
+          <Stack direction="row" className={styles.tags}>
+            <Tag>{format(parseISO(post!.date), 'd MMMM yyyy')}</Tag>
+            <Link className={styles.tag} to={`/${post?.category}`}>
+              <Tag variant="accent">{post?.category}</Tag>
+            </Link>
+          </Stack>
           <Markdown content={markdown || ''} />
         </Container>
       )}

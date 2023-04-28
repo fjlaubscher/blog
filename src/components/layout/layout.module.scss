@@ -45,16 +45,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 1rem;
 
     h1 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: bold;
+      margin-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      color: #bbb;
       font-weight: normal;
       margin-bottom: 0;
     }
@@ -63,12 +64,16 @@
   @media (min-width: breakpoints.$desktop) {
     height: 70vh;
 
-    h1 {
-      font-size: 2.5rem;
-    }
+    .heroText {
+      padding: 2rem 1rem;
 
-    h2 {
-      font-size: 1.25rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
     }
   }
 }
@@ -91,12 +96,16 @@
   color: white;
   text-align: center;
 
-  h2 {
-    margin-top: 0;
-    color: inherit;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  .footerText {
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+    max-width: 640px;
+
+    p {
+      margin: 0;
+    }
   }
+
 
   .links {
     display: flex;

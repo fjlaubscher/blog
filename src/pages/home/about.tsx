@@ -13,10 +13,6 @@ export const Paragraphs = () => (
       I'm much more of a hobbyist than a <i>competitive wargamer</i> (yes, it's a thing).
       <br />
       The entire process of building, painting and then playing with your models is what gets me.
-      <br />
-      <br />
-      Regardless of how strong / efficient some units might be, if the models suck, I'd rather
-      rather use the model that looks cool.
     </p>
     <p>
       Recently, I've shifted my entire hobby focus to Bolt Action as I've gotten stuck in the world

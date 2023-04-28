@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Markdown = ({ content }: Props) => (
-  <ReactMarkdown linkTarget="_blank" className={styles.markdown}>
+  <ReactMarkdown linkTarget="_blank" className={styles.markdown} skipHtml={false}>
     {content}
   </ReactMarkdown>
 );

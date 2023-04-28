@@ -73,6 +73,13 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
       <main className={styles.content}>{children}</main>
       <img className={styles.wave} src="/wave.svg" alt="wave" />
       <footer className={styles.footer}>
+        <Stack direction="column" className={styles.footerText}>
+          <p>
+            This blog serves as a way of documenting my thoughts related to software development,
+            the wargaming hobby and whatever else comes to mind.
+          </p>
+          <a href="https://francoislaubscher.dev">View the professional side of me, here.</a>
+        </Stack>
         <div className={styles.links}>
           <a target="_blank" rel="noreferrer" href="https://github.com/fjlaubscher">
             <FaGithubSquare />
