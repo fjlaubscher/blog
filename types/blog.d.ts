@@ -7,7 +7,7 @@ declare namespace Blog {
 
   interface Post {
     date: string;
-    category: 'hobby' | 'wargaming' | '3d-printing';
+    category: 'code' | 'hobby' | 'wargaming';
     slug: string;
     title: string;
     description: string;

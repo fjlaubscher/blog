@@ -35,6 +35,9 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
             <FaTerminal />
           </Link>
           <Stack className={styles.links} direction="row">
+            <Link className={pathname.includes('/code') ? styles.active : undefined} to="/code">
+              Code
+            </Link>
             <Link className={pathname.includes('/hobby') ? styles.active : undefined} to="/hobby">
               Hobby
             </Link>
@@ -43,12 +46,6 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
               to="/wargaming"
             >
               Wargaming
-            </Link>
-            <Link
-              className={pathname.includes('/3d-printing') ? styles.active : undefined}
-              to="/3d-printing"
-            >
-              3D Printing
             </Link>
           </Stack>
         </Container>

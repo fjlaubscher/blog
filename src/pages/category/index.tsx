@@ -33,7 +33,7 @@ const Category = () => {
       <Container>
         <Grid>
           {postsByCategory.map((post, i) => (
-            <Post key={`post -${i}`} {...post} />
+            <Post key={`post-${i}`} {...post} />
           ))}
         </Grid>
       </Container>
