@@ -1,5 +1,17 @@
 [
   {
+    "date": "2023-05-04",
+    "category": "hobby",
+    "slug": "us-army-showcase",
+    "title": "Showcase - US Army",
+    "description": "The US Army in Western Europe (1944)",
+    "image": {
+      "small": "https://francoislaubscher-blog.s3.af-south-1.amazonaws.com/images/hobby/us-army-showcase/banner.jpg",
+      "large": "https://francoislaubscher-blog.s3.af-south-1.amazonaws.com/images/hobby/us-army-showcase/banner.jpg",
+      "social": "https://francoislaubscher-blog.s3.af-south-1.amazonaws.com/images/hobby/us-army-showcase/banner.jpg"
+    }
+  },
+  {
     "date": "2023-04-28",
     "category": "wargaming",
     "slug": "bolt-action-battle-report-point-defence-us-vs-finland",

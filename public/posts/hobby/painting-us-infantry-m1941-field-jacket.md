@@ -26,7 +26,7 @@ Then, prime the miniatures with a spray or brush-on primer to create a smooth su
 
 ## Priming
 
-I usually prime my miniatures with my airbrush, but these were primed using `Rust-Oleum Painter's Touch Flat Grey Primer`.
+I usually prime my miniatures with my airbrush, but these were primed using "rattle-can primer", `Rust-Oleum Painter's Touch Flat Grey Primer`.
 
 ## Base Coating
 
