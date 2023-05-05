@@ -1,10 +1,10 @@
 [
   {
     "date": "2023-05-04",
-    "category": "hobby",
-    "slug": "us-army-showcase",
-    "title": "Showcase - US Army",
-    "description": "The US Army in Western Europe (1944)",
+    "category": "showcase",
+    "slug": "bolt-action-us-army",
+    "title": "Bolt Action - US Army",
+    "description": "Showcase: The US Army in Western Europe (1944)",
     "image": {
       "small": "https://francoislaubscher-blog.s3.af-south-1.amazonaws.com/images/hobby/us-army-showcase/banner.jpg",
       "large": "https://francoislaubscher-blog.s3.af-south-1.amazonaws.com/images/hobby/us-army-showcase/banner.jpg",

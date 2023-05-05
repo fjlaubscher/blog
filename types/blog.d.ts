@@ -7,10 +7,16 @@ declare namespace Blog {
 
   interface Post {
     date: string;
-    category: 'code' | 'hobby' | 'wargaming';
+    category: 'code' | 'hobby' | 'wargaming' | 'showcase';
     slug: string;
     title: string;
     description: string;
     image: Image;
+  }
+
+  interface ShowcaseImage {
+    src: string;
+    alt: string;
+    description: string;
   }
 }

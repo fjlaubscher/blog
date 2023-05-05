@@ -39,6 +39,12 @@ const AppLayout = ({ children, title, description, image, variant = 'standard' }
               Hobby
             </Link>
             <Link
+              className={pathname.includes('/showcase') ? styles.active : undefined}
+              to="/showcase"
+            >
+              Showcase
+            </Link>
+            <Link
               className={pathname.includes('/wargaming') ? styles.active : undefined}
               to="/wargaming"
             >

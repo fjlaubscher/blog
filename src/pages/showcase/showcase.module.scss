@@ -1,0 +1,62 @@
+@use "@fjlaubscher/matter/src/styles/breakpoints";
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tag {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.image {
+  transform: translateY(0);
+  transition: 0.2s ease-in-out transform;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.grid {
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: breakpoints.$desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.modal {
+  padding: 0;
+  position: relative;
+  max-width: calc(100vw - 2rem);
+
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: var(--color-dark-text);
+    z-index: 2;
+    margin: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  @media (min-width: breakpoints.$tablet) {
+    width: auto;
+    max-width: none;
+    max-height: calc(100vh - 2rem);
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}

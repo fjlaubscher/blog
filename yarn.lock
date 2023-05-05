@@ -353,8 +353,8 @@
   integrity sha512-kf9RB0Fg7NZfap83B3QOqOGg9QmD9yBudqQXzzOtn3i4y7ZUXe5ONeW34Gwi+TxhH4mvj72R1Zc300KUMa9Bng==
 
 "@fjlaubscher/matter@fjlaubscher/matter":
-  version "2.3.0"
-  resolved "https://codeload.github.com/fjlaubscher/matter/tar.gz/8cf98e017b82381951879ee793b1e4016f02672b"
+  version "2.5.0"
+  resolved "https://codeload.github.com/fjlaubscher/matter/tar.gz/79afbae1cf41d113bcbf55b92052746569cc28c4"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
