@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fjlaubscher/matter": "fjlaubscher/matter",
+    "@vercel/analytics": "^1.0.1",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
@@ -41,6 +42,7 @@
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
-    ]
+    ],
+    "skipThirdPartyRequests": true
   }
 }
